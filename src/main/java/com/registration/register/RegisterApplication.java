@@ -24,7 +24,6 @@ public class RegisterApplication {
 
 			// save a few courses
 			log.info("Saving a few courses ");
-
 		});
 	}
 

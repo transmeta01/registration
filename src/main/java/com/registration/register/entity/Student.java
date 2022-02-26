@@ -1,6 +1,10 @@
 package com.registration.register.entity;
 
+import lombok.NonNull;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "STUDENT")
@@ -14,9 +18,12 @@ public class Student extends BaseEntity {
 
     public int age = 0;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "course_id")
-    public Course course;
+    @ElementCollection
+    @CollectionTable(
+            name = "STUDENT_COURSES",
+            joinColumns = @JoinColumn(name = "student_id")
+    )
+    public Set<Course> course = new HashSet<>();
 
     // other attributes...etc
 

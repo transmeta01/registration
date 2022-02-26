@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/v1/registration")
@@ -34,6 +35,13 @@ public class RegistrationController {
         return ResponseEntity
                 .created(URI.create(String.format("/student/%s", addedStudent.getId())))
                 .body(addedStudent);
+    }
+
+    @PutMapping(path = "/student/remove/{id}"
+    )
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void removeStudent(@PathVariable Long id) {
+
     }
 
     @PostMapping(
@@ -86,16 +94,11 @@ public class RegistrationController {
     )
     public ResponseEntity<Student> removeCourseFromStudent(@PathVariable Long studentId, Long courseId) {
 
-        if (courseService.getCourse(courseId).isPresent() &&
-                studentService.getStudent(studentId).isPresent()) {
+        if (studentService.getStudent(studentId).isPresent()) {
 
             Student student = studentService.getStudent(studentId).get();
-            Course course = courseService.getCourse(courseId).get();
-
             try {
                 studentService.updateStudent(student);
-                courseService.updateCourse(course);
-
                 return ResponseEntity
                         .accepted()
                         .lastModified(System.currentTimeMillis())
@@ -105,7 +108,7 @@ public class RegistrationController {
                 return ResponseEntity.badRequest().body(student);
             }
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
 
@@ -129,13 +132,14 @@ public class RegistrationController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Course> updateCourse(@RequestBody Course course) {
+        Optional<Course> result = Optional.empty();
         try {
-            courseService.updateCourse(course);
+            result = courseService.updateCourse(course);
         } catch (Exception e) {
-            ResponseEntity.status(HttpStatus.NOT_FOUND).body(course);
+            ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
-        return ResponseEntity.ok(course);
+        return ResponseEntity.ok(result.get());
     }
 
     @GetMapping(
@@ -147,7 +151,7 @@ public class RegistrationController {
         if (studentService.getStudent(id).isPresent())
             return ResponseEntity.ok(studentService.getStudent(id).get());
 
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
     @GetMapping(
@@ -159,7 +163,7 @@ public class RegistrationController {
         if (courseService.getCourse(id).isPresent())
             return ResponseEntity.ok(courseService.getCourse(id).get());
 
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
     @GetMapping(

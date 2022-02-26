@@ -2,7 +2,7 @@
 
 FROM openjdk:16-alpine3.13
 
-WORKDIR /regsitration-app
+WORKDIR /registration-app
 
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./

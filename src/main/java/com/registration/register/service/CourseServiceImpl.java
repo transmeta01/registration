@@ -39,13 +39,15 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
-    public void updateCourse(Course course) throws Exception {
+    public Optional<Course> updateCourse(Course course) throws Exception {
         Optional<Course> found = repository.findById(course.getId());
         if(found.isPresent()) {
             repository.delete(found.get());
             course.setLastModified(new Date());
             repository.save(course);
         }
+
+        return Optional.empty();
     }
 
     @Override

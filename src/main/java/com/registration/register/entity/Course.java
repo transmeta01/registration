@@ -18,10 +18,6 @@ public class Course extends BaseEntity {
     @Column(nullable = false)
     public String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "student_id")
-    public Student student;
-
     // other attributes...etc
 
 }
