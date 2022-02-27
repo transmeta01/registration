@@ -1,10 +1,11 @@
 # Registration service API V1 (Metadata test)
 
 ## Run 
-docker-compose up 
+- docker-compose up
+- go to localhost:8080/v1/registration
 
 ## API documentation 
-[openapi docs](localhost:8080/v1/apidocs/)
+[openapi](localhost:8080/v1/apidocs/)
 
 ## Test
 - install [postman](https://www.postman.com/downloads/)
