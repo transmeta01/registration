@@ -5,7 +5,7 @@
 - go to localhost:8080/v1/registration
 
 ## API documentation 
-[openapi](localhost:8080/v1/apidocs/)
+- localhost:8080/v1/apidocs/ss
 
 ## Test
 - install [postman](https://www.postman.com/downloads/)
