@@ -1,7 +1,7 @@
 # Registration service API V1 (Metadata test)
 
 ## Run 
-- docker-compose up
+- docker-compose up (or 'mvn spring-boot:run' for non docker setting)
 - go to localhost:8080/v1/registration
 
 ## API documentation 
