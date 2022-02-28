@@ -16,5 +16,7 @@ public interface StudentService {
 
     List<Student> getAllStudent();
 
+    List<Student> filterStudentWithoutCourse();
+
     Optional<Student> getStudent(Long studentId);
 }

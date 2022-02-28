@@ -1,16 +1,18 @@
 package com.registration.register.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.annotation.LastModifiedDate;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.*;
 
 @Entity
 @Table(name = "COURSE")
-public class Course extends BaseEntity {
+@Getter
+@Setter
+@Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
+public class Course extends AbstractEntity {
 
     @Column(nullable = false)
     public String description;
@@ -18,6 +20,7 @@ public class Course extends BaseEntity {
     @Column(nullable = false)
     public String name;
 
-    // other attributes...etc
+    @Column(name = "student_count")
+    public int count = 0;
 
 }

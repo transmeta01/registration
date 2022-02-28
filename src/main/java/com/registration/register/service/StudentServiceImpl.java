@@ -44,6 +44,11 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public List<Student> filterStudentWithoutCourse() {
+        return repository.filterStudentWithoutCourse();
+    }
+
+    @Override
     public Optional<Student> getStudent(Long id) {
         return repository.findById(id);
     }

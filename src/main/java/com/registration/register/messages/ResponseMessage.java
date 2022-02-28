@@ -1,9 +1,16 @@
 package com.registration.register.messages;
 
-/**
- * Response message
- *
- * for I18n...eventually
- */
-public class ResponseMessage {
+
+import lombok.Builder;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Builder
+public class ResponseMessage<T> {
+    public T payload;
+    public String message;
+
+    public Map<String, String> metadata = new HashMap<>();
+
 }

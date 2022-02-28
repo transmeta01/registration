@@ -1,11 +1,32 @@
 # Registration service API V1 (Metadata test)
 
-## Run 
-- docker-compose up (or 'mvn spring-boot:run' for non docker setting)
+### Run 
+- 
+```bash
+docker-compose up --force-recreate --build -d
+```
+- you may omit the '-d' to watch the logs
+- For non docker setting
+```bash
+mvn spring-boot:run
+```
 - go to localhost:8080/v1/registration
 
+
+## Admin (to manually query db)
+
+- to find the mysql container id
+```bash
+docker ps -a 
+```
+- to access mysql container 
+
+```bash 
+docker exec -it db_container_id /bin/sh
+```
+
 ## API documentation 
-- localhost:8080/v1/apidocs/ss
+- [docs](localhost:8080/apidocs/)
 
 ## Test
 - install [postman](https://www.postman.com/downloads/)

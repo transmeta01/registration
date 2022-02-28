@@ -1,7 +1,6 @@
 package com.registration.register.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.*;
@@ -9,9 +8,8 @@ import java.util.Date;
 
 @Data
 @Slf4j
-@NoArgsConstructor
 @MappedSuperclass
-public class BaseEntity {
+public class AbstractEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

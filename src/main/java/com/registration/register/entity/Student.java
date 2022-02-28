@@ -1,14 +1,24 @@
 package com.registration.register.entity;
 
-import lombok.NonNull;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+
+//import javax.validation.constraints.NotNull;
+//import javax.validation.Valid;
 
 @Entity
 @Table(name = "STUDENT")
-public class Student extends BaseEntity {
+@Getter
+@Setter
+@Builder(toBuilder = true)
+@NoArgsConstructor
+@AllArgsConstructor
+public class Student extends AbstractEntity {
 
     @Column(name = "firstname", nullable = false)
     public String firstName;
@@ -18,11 +28,11 @@ public class Student extends BaseEntity {
 
     public int age = 0;
 
-    @ElementCollection
-    @CollectionTable(
-            name = "STUDENT_COURSES",
-            joinColumns = @JoinColumn(name = "student_id")
-    )
+    @Column(name = "course_count")
+    public int count = 0;
+
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "student_id")
     public Set<Course> course = new HashSet<>();
 
     // other attributes...etc
