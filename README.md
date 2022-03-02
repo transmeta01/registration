@@ -25,7 +25,8 @@ docker ps -a
 docker exec -it db_container_id /bin/sh
 ```
 
-- Once in the (mysql) container, password is 'root'
+- Once in the (mysql) container, for credentials see: .env file 
+- adjust to your liking for env to env
 ```bash
 mysql -u root -p  
 ```
