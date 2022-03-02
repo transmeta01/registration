@@ -10,7 +10,19 @@ docker-compose up --force-recreate --build -d
 ```bash
 mvn spring-boot:run
 ```
-- go to localhost:8080/v1/registration
+
+- debug mode 
+```bash
+mvn spring-boot:run -Dspring-boot.run.arguments=--logging.level.org.springframework=TRACE
+```
+
+- specify build/run environment (dev, prod or staging...etc)
+
+```bash
+mvn spring-boot:run -Dspring.profiles.active=dev 
+```
+
+- go to 
 
 
 ## Admin (to manually query db)
@@ -32,7 +44,7 @@ mysql -u root -p
 ```
 
 ## API documentation 
-- [docs](localhost:8080/apidocs/)
+- [docs](http://localhost:8080/apidocs/)
 
 ## Test
 - install [postman](https://www.postman.com/downloads/)
