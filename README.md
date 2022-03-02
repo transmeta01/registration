@@ -22,6 +22,11 @@ mvn spring-boot:run -Dspring-boot.run.arguments=--logging.level.org.springframew
 mvn spring-boot:run -Dspring.profiles.active=dev 
 ```
 
+## Shutdown
+```bash
+docker-compose down
+```
+
 ## Admin (to manually query db)
 
 - to find the mysql container id, whose image name is mysql:latest
