@@ -3,15 +3,9 @@ package com.registration.register.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-//import javax.validation.constraints.NotNull;
-//import javax.validation.Valid;
-
-@Entity
 @Table(name = "STUDENT")
 @Getter
 @Setter

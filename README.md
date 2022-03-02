@@ -1,7 +1,7 @@
 # Registration service API V1 (Metadata test)
 
 ### Run 
-- 
+
 ```bash
 docker-compose up --force-recreate --build -d
 ```
@@ -15,7 +15,7 @@ mvn spring-boot:run
 
 ## Admin (to manually query db)
 
-- to find the mysql container id
+- to find the mysql container id, whose image name is mysql:latest
 ```bash
 docker ps -a 
 ```
@@ -23,6 +23,11 @@ docker ps -a
 
 ```bash 
 docker exec -it db_container_id /bin/sh
+```
+
+- Once in the (mysql) container, password is 'root'
+```bash
+mysql -u root -p  
 ```
 
 ## API documentation 

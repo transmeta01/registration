@@ -12,12 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.*;
 
 @Slf4j
+@Validated
 @RestController
 @RequestMapping("/v1/registration")
 public class RegistrationController {
@@ -187,15 +189,13 @@ public class RegistrationController {
 //        }
     }
 
-    @GetMapping(path = "/course/filter/{studentId}")
-    public ResponseEntity<List<Course>> filterCourseByStudent(@PathVariable Long studentId) {
-        return ResponseEntity.ok(courseRepository.filterCoursesByStudent(studentId));
+    @GetMapping(path = "/course/filter?mode=studentId&id={studentId}")
+    public ResponseEntity<List<Course>> filterCourseByStudent(@RequestParam(name = "mode") String mode, @RequestParam(name = "studentId") String studentId) {
+        return ResponseEntity.ok(courseRepository.filterCoursesByStudent(Long.parseLong(studentId)));
     }
 
-
-
     @GetMapping(
-            path = "/student/filter?mode={filter_value}/"
+            path = "/student/filter/mode?mode={filter_value}/"
     )
     public ResponseEntity<List<Student>> filterStudentWithoutCourse(@RequestParam(name = "mode", required = false) String filter) {
         return ResponseEntity.ok(studentRepository.filterStudentWithoutCourse());
