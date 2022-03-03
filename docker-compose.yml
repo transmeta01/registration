@@ -31,7 +31,6 @@ services:
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
       }'
-#       - "SPRING_PROFILES_ACTIVE=dev"
     stdin_open: true
     tty: true
 volumes:

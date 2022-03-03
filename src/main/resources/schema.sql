@@ -1,4 +1,4 @@
 
-DROP DATABASE IF EXISTS registration;
-CREATE DATABASE registration;
-USE registration;
+--DROP DATABASE IF EXISTS registration;
+--CREATE DATABASE registration;
+--USE registration;
