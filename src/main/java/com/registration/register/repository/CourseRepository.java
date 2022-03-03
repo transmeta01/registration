@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
 
-    @Query(value = "SELECT * FROM COURSE WHERE id IN (SELECT course_id FROM REGISTRATION WHERE student_id = :id)",
+    @Query(value = "SELECT * FROM COURSE c JOIN REGISTRATION r ON c.id = r.course_id WHERE r.student_id =  :id)",
             nativeQuery = true)
     List<Course> filterCoursesByStudent(@Param("id") Long id);
 
