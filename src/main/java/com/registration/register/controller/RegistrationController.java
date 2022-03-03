@@ -3,6 +3,7 @@ package com.registration.register.controller;
 import com.registration.register.entity.Course;
 import com.registration.register.entity.Registration;
 import com.registration.register.entity.Student;
+import com.registration.register.messages.FilterCriteria;
 import com.registration.register.messages.ResponseMessage;
 import com.registration.register.repository.CourseRepository;
 import com.registration.register.repository.RegistrationRepository;
@@ -33,6 +34,19 @@ public class RegistrationController {
     @Autowired
     RegistrationRepository registrationRepository;
 
+    enum FilterMode {
+        STUDENT_WITHOUT_COURSE("student-without-course"),
+        STUDENT_PER_COURSE("student-per-course"),
+        COURSE_BY_STUDENT_ID("course-by-student-id"),
+        COURSE_WITHOUT_STUDENT("course-without-student");
+
+        String mode;
+
+        FilterMode(String mode) {
+            this.mode = mode;
+        }
+    }
+
     @PostMapping(
             path = "/student/add",
             consumes = MediaType.APPLICATION_JSON_VALUE,
@@ -52,9 +66,7 @@ public class RegistrationController {
                 .metadata(metadata)
                 .build();
 
-        return ResponseEntity
-                .created(URI.create(String.format("/student/%s", addedStudent.getId())))
-                .body(responseMessage);
+        return ResponseEntity.created(uri).body(responseMessage);
     }
 
     @PutMapping(path = "/student/remove/{id}")
@@ -84,6 +96,14 @@ public class RegistrationController {
     )
     public ResponseEntity<ResponseMessage> addCourseToStudent(@PathVariable Long studentId, @PathVariable Long courseId) {
         Map<String, String> metadata = new HashMap<>();
+        HttpStatus status = HttpStatus.OK;
+        String message = "";
+
+        ResponseMessage responseMessage = ResponseMessage
+                                                .builder()
+                                                .metadata(metadata)
+                                                .message(message)
+                                                .build();
 
         if (studentRepository.findById(studentId).isPresent() &&
                 courseRepository.findById(courseId).isPresent()) {
@@ -94,16 +114,14 @@ public class RegistrationController {
             try {
                 // has the student already registered?
                 if(student.getCourse().contains(course)) {
+                    metadata.put("Status", HttpStatus.NOT_ACCEPTABLE.toString());
+                    message = String.format("Student with id: %id, is already registered to course %courseId",
+                                                    student.getId(), courseId);
 
-                    metadata.put("", HttpStatus.NOT_ACCEPTABLE.toString());
+                    status = HttpStatus.NOT_ACCEPTABLE;
 
-                    ResponseMessage response = ResponseMessage
-                            .builder()
-                            .metadata(metadata)
-                            .build();
-
-                    return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE)
-                            .body(response);
+                    // TODO augment with other metadata/event for analytics
+                    log.info(message);
                 }
 
                 // student can have 50 course and course can have 50 students at most
@@ -112,11 +130,10 @@ public class RegistrationController {
                     course.setCount(count);
 
                     Registration registration = Registration
-                            .builder()
-                            .course(course)
-                            .student(student)
-                            .lastModified(new Date())
-                            .build();
+                                                    .builder()
+                                                    .course(course)
+                                                    .student(student)
+                                                    .build();
 
                     log.info("Saving registration", registration.toString());
                     registrationRepository.save(registration);
@@ -126,79 +143,126 @@ public class RegistrationController {
                     student.setCount(courseCount);
                     student = studentRepository.saveAndFlush(student);
 
-                    ResponseMessage responseMessage = ResponseMessage
-                            .builder()
-                            .payload(student)
-                            .message(String.format("course added to student : %s", student.toString()))
-                            .build();
+                    message = String.format("course added to student : %s", student.toString());
+                    log.info(message, student);
 
-                    return ResponseEntity
-                            .accepted()
-                            .lastModified(System.currentTimeMillis())
-                            .body(responseMessage);
+                    status = HttpStatus.ACCEPTED;
+
                 } else {
-                    throw new Exception("quota exceed");
+                    message = String.format("Quota exceed: Student %d, can have 50 courses at once at most. " +
+                                "Course %d can have 50 students at once at most", student.getId(), courseId);
+
+                    status = HttpStatus.NOT_ACCEPTABLE;
+                    metadata.put("Status", HttpStatus.NOT_ACCEPTABLE.toString());
+
+                    log.info(message);
                 }
             } catch (Exception e) {
-                metadata.put("Error", e.getMessage());
+                status = HttpStatus.BAD_REQUEST;
+                log.error("ERROR", e.getStackTrace());
                 metadata.put("Status", HttpStatus.BAD_REQUEST.toString());
-
-                return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                        .body(ResponseMessage
-                                .builder()
-                                .metadata(metadata)
-                                .build()
-                );
+                metadata.put("Error", "An error has occurred");
             }
         }
 
-        // TODO include more specific message...I18n ?
-        metadata.put("status", HttpStatus.NOT_FOUND.toString());
-
-        return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                .body(ResponseMessage
-                        .builder()
-                        .metadata(metadata)
-                        .build()
-                );
-
-    }
-
-    @GetMapping(path = "/student/filter/{courseId}")
-    public ResponseEntity<ResponseMessage<List<Student>>> filterStudentsPerCourse(@PathVariable Long courseId) {
-        List<Student> studentList = studentRepository.filterStudentsByCourse(courseId);
-
-        ResponseMessage responseMessage = ResponseMessage
-                .builder()
-                .payload(studentList)
-                .build();
-
-        return ResponseEntity.ok(responseMessage);
-    }
-
-    enum FilterMode {
-        WITHOUT_COURSE,
-        WITHOUT_STUDENT
+        return ResponseEntity.status(status).body(responseMessage);
     }
 
     @GetMapping(path = "/course/filter/")
-    public ResponseEntity<List<Course>> filterCoursesWithoutStudent(@RequestParam(name = "mode", required = false) String mode) {
-//        FilterMode filterMode = FilterMode.WITHOUT_STUDENT;
-//        if(mode.equalsIgnoreCase(filterMode.name())) {
-            return ResponseEntity.ok(courseRepository.filterCourseWithoutStudent());
-//        }
-    }
+    public ResponseEntity<ResponseMessage> filterCoursesWithoutStudent(@RequestBody FilterCriteria criteria) {
 
-    @GetMapping(path = "/course/filter?mode=studentId&id={studentId}")
-    public ResponseEntity<List<Course>> filterCourseByStudent(@RequestParam(name = "mode") String mode, @RequestParam(name = "studentId") String studentId) {
-        return ResponseEntity.ok(courseRepository.filterCoursesByStudent(Long.parseLong(studentId)));
+        FilterMode filterMode = FilterMode.valueOf(criteria.getMode());
+
+        Map<String, String> meta = new HashMap<>();
+        HttpStatus status = HttpStatus.OK;
+        String message = "";
+
+        ResponseMessage responseMessage = ResponseMessage
+                                            .builder()
+                                            .metadata(meta)
+                                            .message(message)
+                                            .build();
+
+        List<Course> courses = Collections.emptyList();
+
+        switch (filterMode) {
+            case COURSE_WITHOUT_STUDENT -> {
+                courses = courseRepository.filterCourseWithoutStudent();
+
+                if(courses.isEmpty()) break;
+
+                message = String.format("Courses without students: %d", courses.size());
+            }
+
+            case COURSE_BY_STUDENT_ID -> {
+                courses = courseRepository.filterCoursesByStudent(criteria.getId());
+
+                if(courses.isEmpty()) break;
+
+                message = String.format("course count %d for student with id : %d", courses.size(), criteria.getId());
+                break;
+            }
+
+            default -> {
+                status = HttpStatus.NOT_FOUND;
+                message = "Not found";
+            }
+        };
+
+        responseMessage.setPayload(courses);
+        responseMessage.setMetadata(meta);
+        responseMessage.setMessage(message);
+
+        return ResponseEntity
+                .status(status)
+                .lastModified(System.currentTimeMillis())
+                .body(responseMessage);
     }
 
     @GetMapping(
-            path = "/student/filter/mode?mode={filter_value}/"
+            path = "/student/filter/",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public ResponseEntity<List<Student>> filterStudentWithoutCourse(@RequestParam(name = "mode", required = false) String filter) {
-        return ResponseEntity.ok(studentRepository.filterStudentWithoutCourse());
+    public ResponseEntity<ResponseMessage> filterStudent(@RequestBody FilterCriteria criteria) {
+        FilterMode mode = FilterMode.valueOf(criteria.getMode());
+
+        List<Student> payload = new ArrayList<>();
+        Map<String, String> meta = new HashMap<>();
+        HttpStatus status = HttpStatus.OK;
+
+        ResponseMessage responseMessage = ResponseMessage
+                                                    .builder()
+                                                    .metadata(meta)
+                                                    .build();
+
+        String message = "";
+
+        switch (mode) {
+            case STUDENT_PER_COURSE -> {
+                payload = studentRepository.filterStudentsByCourse(criteria.getId());
+                message = String.format("student %id, has %count courses", criteria.getId(), payload.size());
+            }
+
+            case STUDENT_WITHOUT_COURSE -> {
+                payload = studentRepository.filterStudentWithoutCourse();
+                message = String.format("there are %d student without courses", payload.size());
+            }
+
+            default -> {
+                message = "No Students were found";
+                status = HttpStatus.NOT_FOUND;
+            }
+        }
+
+        responseMessage.setMessage(message);
+        responseMessage.setPayload(payload);
+        meta.put("Status", status.toString());
+
+        return ResponseEntity
+                .status(status)
+                .lastModified(System.currentTimeMillis())
+                .body(responseMessage);
     }
 
     @PostMapping(
@@ -206,18 +270,27 @@ public class RegistrationController {
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public ResponseEntity<Course> addCourse(@RequestBody Course course) {
-        Course added = courseRepository.save(course);
+    public ResponseEntity<ResponseMessage> addCourse(@RequestBody Course course) {
+        Course added = courseRepository.saveAndFlush(course);
 
-        ResponseMessage responseMessage = ResponseMessage
-                .builder()
-                .payload(added)
-                .build();
+        Map<String, String> meta = new HashMap<>();
+
+        URI uri = URI.create(String.format("/course/%d", added.getId()));
+        meta.put("URI", uri.toString());
+        meta.put("Status", HttpStatus.CREATED.toString());
 
         return ResponseEntity
-                .created(URI.create(String.format("/course/%d", added.getId())))
+                .created(uri)
                 .lastModified(System.currentTimeMillis())
-                .body(added);
+                .body(
+                        ResponseMessage
+                            .builder()
+                            .payload(added)
+                            .metadata(meta)
+                            .payload(added)
+                            .build()
+
+                );
     }
 
 

@@ -2,11 +2,9 @@ package com.registration.register.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Builder
 @Entity
@@ -19,9 +17,6 @@ public class Registration extends AbstractEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
 
-    @Column(name = "lastModified", nullable = false)
-    public Date lastModified = new Date();
-
     @ManyToOne
     @JoinColumn(name = "student_id")
     public Student student;
@@ -29,4 +24,5 @@ public class Registration extends AbstractEntity {
     @ManyToOne
     @JoinColumn(name = "course_id")
     public Course course;
+
 }

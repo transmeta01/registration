@@ -34,5 +34,4 @@ public class StudentRepositoryTest {
         assertThat(studentRepository).isNotNull();
     }
 
-
 }

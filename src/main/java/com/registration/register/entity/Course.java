@@ -3,7 +3,6 @@ package com.registration.register.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.*;
 
 @Entity
 @Table(name = "COURSE")
