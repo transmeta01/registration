@@ -1,0 +1,1308 @@
+Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537)
+Maven home: /usr/local/Cellar/maven/3.8.4/libexec
+Java version: 17.0.1, vendor: Homebrew, runtime: /usr/local/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home
+Default locale: en_CA, platform encoding: UTF-8
+OS name: "mac os x", version: "11.6.4", arch: "x86_64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /usr/local/Cellar/maven/3.8.4/libexec/conf/settings.xml
+[DEBUG] Reading user settings from /Users/richard/.m2/settings.xml
+[DEBUG] Reading global toolchains from /usr/local/Cellar/maven/3.8.4/libexec/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/richard/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/richard/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/richard/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for org.apache (http://maven.apache.org/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for org.codehaus.mojo (http://mojo.codehaus.org/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for com.jboss.repository (http://repository.jboss.com/maven2).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for com.springsource.repository.bundles.release (http://repository.springsource.com/maven/bundles/release).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for com.springsource.repository.bundles.external (http://repository.springsource.com/maven/bundles/external).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for com.springsource.repository.libraries.release (http://repository.springsource.com/maven/libraries/release).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for com.springsource.repository.libraries.external (http://repository.springsource.com/maven/libraries/external).
+[DEBUG] Extension realms for project com.registration:register:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:2.6.3: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:2.6.3: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.registration:register:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, verify]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ---------------------< com.registration:register >----------------------
+[INFO] Building register 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.registration:register:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): [compile+runtime]
+[DEBUG] Dependencies (resolve): [compile, compile+runtime, runtime, test]
+[DEBUG] Repositories (dependencies): [java.net (https://maven.java.net/content/repositories/public/, default, releases), maven-default-http-blocker (http://0.0.0.0/, default, releases+snapshots, blocked), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <junitPlatformArtifactName default-value="org.junit.platform:junit-platform-engine">${junitPlatformArtifactName}</junitPlatformArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <shutdown default-value="testset">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:3.2.2:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archive>
+    <manifest>
+      <mainClass>${start-class}</mainClass>
+      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+    </manifest>
+  </archive>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <finalName default-value="${project.build.finalName}"/>
+  <forceCreation default-value="false">${maven.jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false"/>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:2.6.3:repackage (repackage)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <attach default-value="true"/>
+  <excludeDevtools default-value="true">${spring-boot.repackage.excludeDevtools}</excludeDevtools>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>
+    <exclude>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </exclude>${spring-boot.excludes}</excludes>
+  <executable default-value="false"/>
+  <finalName default-value="${project.build.finalName}"/>
+  <includeSystemScope default-value="false"/>
+  <includes>${spring-boot.includes}</includes>
+  <layout>${spring-boot.repackage.layout}</layout>
+  <mainClass>${start-class}</mainClass>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${spring-boot.repackage.skip}</skip>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for ow2-snapshot (http://repository.ow2.org/nexus/content/repositories/snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=2591625, ConflictMarker.markTime=1005073, ConflictMarker.nodeCount=372, ConflictIdSorter.graphTime=1697490, ConflictIdSorter.topsortTime=721384, ConflictIdSorter.conflictIdCount=143, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=27040054, ConflictResolver.conflictItemCount=270, DefaultDependencyCollector.collectTime=961341840, DefaultDependencyCollector.transformTime=35573163}
+[DEBUG] com.registration:register:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:2.6.3:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-aop:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]          org.springframework:spring-aop:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.aspectj:aspectjweaver:jar:1.9.7:compile (version managed from 1.9.7)
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]          com.zaxxer:HikariCP:jar:4.0.3:compile (version managed from 4.0.3)
+[DEBUG]          org.springframework:spring-jdbc:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]       jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile (version managed from 1.3.3)
+[DEBUG]       jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile (version managed from 2.2.3)
+[DEBUG]       org.hibernate:hibernate-core:jar:5.6.4.Final:compile (version managed from 5.6.4.Final)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.11.22:compile (version managed from 1.12.7)
+[DEBUG]          antlr:antlr:jar:2.7.7:compile (version managed from 2.7.7)
+[DEBUG]          org.jboss:jandex:jar:2.4.2.Final:compile
+[DEBUG]          org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile
+[DEBUG]          org.glassfish.jaxb:jaxb-runtime:jar:2.3.5:compile (version managed from 2.3.1)
+[DEBUG]             org.glassfish.jaxb:txw2:jar:2.3.5:compile (version managed from 2.3.5)
+[DEBUG]             com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[DEBUG]             com.sun.activation:jakarta.activation:jar:1.2.2:runtime (version managed from 1.2.2)
+[DEBUG]       org.springframework.data:spring-data-jpa:jar:2.6.1:compile (version managed from 2.6.1)
+[DEBUG]          org.springframework.data:spring-data-commons:jar:2.6.1:compile (version managed from 2.6.1)
+[DEBUG]          org.springframework:spring-orm:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.springframework:spring-context:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.springframework:spring-tx:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.springframework:spring-beans:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]       org.springframework:spring-aspects:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:2.6.3:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.2.10:compile (version managed from 1.2.10)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.2.10:compile (version managed from 1.2.10)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.1:compile (version managed from 2.17.1)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.17.1:compile (version managed from 2.17.1)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:1.7.33:compile (version managed from 1.7.33)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[DEBUG]          org.yaml:snakeyaml:jar:1.29:compile (version managed from 1.29)
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.13.1:compile (version managed from 2.13.1)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.1:compile (version managed from 2.13.1)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.1:compile (version managed from 2.13.1)
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.1:compile (version managed from 2.13.1)
+[DEBUG]       org.springframework:spring-web:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]       org.springframework:spring-webmvc:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.springframework:spring-expression:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]    org.springframework.boot:spring-boot-starter-jetty:jar:2.6.3:compile
+[DEBUG]       jakarta.servlet:jakarta.servlet-api:jar:4.0.4:compile (version managed from 4.0.4)
+[DEBUG]       jakarta.websocket:jakarta.websocket-api:jar:1.1.2:compile (version managed from 1.1.2)
+[DEBUG]       org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.56:compile (version managed from 9.0.56)
+[DEBUG]       org.eclipse.jetty:jetty-servlets:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-continuation:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-http:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-util:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-io:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]       org.eclipse.jetty:jetty-webapp:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-xml:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-servlet:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.eclipse.jetty:jetty-security:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]                org.eclipse.jetty:jetty-server:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.eclipse.jetty:jetty-util-ajax:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]       org.eclipse.jetty.websocket:websocket-server:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty.websocket:websocket-common:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.eclipse.jetty.websocket:websocket-api:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty.websocket:websocket-client:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.eclipse.jetty:jetty-client:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty.websocket:websocket-servlet:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]       org.eclipse.jetty.websocket:javax-websocket-server-impl:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]          org.eclipse.jetty:jetty-annotations:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.eclipse.jetty:jetty-plus:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]             org.ow2.asm:asm:jar:9.2:compile
+[DEBUG]             org.ow2.asm:asm-commons:jar:9.2:compile
+[DEBUG]                org.ow2.asm:asm-tree:jar:9.2:compile
+[DEBUG]                org.ow2.asm:asm-analysis:jar:9.2:compile
+[DEBUG]          org.eclipse.jetty.websocket:javax-websocket-client-impl:jar:9.4.44.v20210927:compile (version managed from 9.4.44.v20210927)
+[DEBUG]    org.springframework.boot:spring-boot-devtools:jar:2.6.3:compile (optional)
+[DEBUG]       org.springframework.boot:spring-boot:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]       org.springframework.boot:spring-boot-autoconfigure:jar:2.6.3:compile (version managed from 2.6.3)
+[DEBUG]    org.springframework.boot:spring-boot-starter-validation:jar:2.6.3:compile
+[DEBUG]    org.hibernate.validator:hibernate-validator:jar:7.0.1.Final:compile
+[DEBUG]       jakarta.validation:jakarta.validation-api:jar:2.0.2:compile (version managed from 3.0.0)
+[DEBUG]       org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile (version managed from 3.4.1.Final)
+[DEBUG]       com.fasterxml:classmate:jar:1.5.1:compile (version managed from 1.5.1)
+[DEBUG]    mysql:mysql-connector-java:jar:8.0.28:runtime (exclusions managed from [com.google.protobuf:protobuf-java:*:*])
+[DEBUG]    org.projectlombok:lombok:jar:1.18.22:compile (optional)
+[DEBUG]    com.h2database:h2:jar:1.4.200:runtime
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:2.6.3:test
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:2.6.3:test (version managed from 2.6.3)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:2.6.3:test (version managed from 2.6.3)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.6.0:test (version managed from 2.6.0)
+[DEBUG]          net.minidev:json-smart:jar:2.4.7:test (version managed from 2.4.7)
+[DEBUG]             net.minidev:accessors-smart:jar:2.4.7:test
+[DEBUG]       jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile (version managed from 2.3.3)
+[DEBUG]          jakarta.activation:jakarta.activation-api:jar:1.2.2:compile (version managed from 1.2.2)
+[DEBUG]       org.assertj:assertj-core:jar:3.21.0:test (version managed from 3.21.0)
+[DEBUG]       org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:1.8.2:test (version managed from 1.8.2)
+[DEBUG]       org.mockito:mockito-core:jar:4.0.0:test (version managed from 4.0.0)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.11.22:test (version managed from 1.11.19)
+[DEBUG]          org.objenesis:objenesis:jar:3.2:test
+[DEBUG]       org.mockito:mockito-junit-jupiter:jar:4.0.0:test (version managed from 4.0.0)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.0:test (version managed from 1.5.0)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-core:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]          org.springframework:spring-jcl:jar:5.3.15:compile (version managed from 5.3.15)
+[DEBUG]       org.springframework:spring-test:jar:5.3.15:test (version managed from 5.3.15)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.8.4:test (version managed from 2.8.4)
+[DEBUG]    org.testcontainers:junit-jupiter:jar:1.16.3:test
+[DEBUG]    org.testcontainers:testcontainers:jar:1.16.3:test
+[DEBUG]       junit:junit:jar:4.13.2:test (version managed from 4.13.2)
+[DEBUG]          org.hamcrest:hamcrest-core:jar:2.2:test (version managed from 1.3)
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.33:compile (version managed from 1.7.32)
+[DEBUG]       org.apache.commons:commons-compress:jar:1.21:test
+[DEBUG]       org.rnorth.duct-tape:duct-tape:jar:1.0.8:test
+[DEBUG]          org.jetbrains:annotations:jar:17.0.0:test
+[DEBUG]       com.github.docker-java:docker-java-api:jar:3.2.12:test
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.13.1:compile (version managed from 2.10.3)
+[DEBUG]       com.github.docker-java:docker-java-transport-zerodep:jar:3.2.12:test
+[DEBUG]          com.github.docker-java:docker-java-transport:jar:3.2.12:test
+[DEBUG]          net.java.dev.jna:jna:jar:5.8.0:test
+[DEBUG]    org.testcontainers:mysql:jar:1.16.3:test
+[DEBUG]       org.testcontainers:jdbc:jar:1.16.3:test
+[DEBUG]          org.testcontainers:database-commons:jar:1.16.3:test
+[DEBUG]    com.github.javafaker:javafaker:jar:1.0.2:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.12.0:compile (version managed from 3.5)
+[DEBUG]       org.yaml:snakeyaml:jar:android:1.23:compile
+[DEBUG]       com.github.mifmif:generex:jar:1.0.2:compile
+[DEBUG]          dk.brics.automaton:automaton:jar:1.11-8:compile
+[DEBUG]    org.springdoc:springdoc-openapi-ui:jar:1.6.4:compile
+[DEBUG]       org.springdoc:springdoc-openapi-webmvc-core:jar:1.6.4:compile
+[DEBUG]          org.springdoc:springdoc-openapi-common:jar:1.6.4:compile
+[DEBUG]             io.swagger.core.v3:swagger-core:jar:2.1.12:compile
+[DEBUG]                com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.13.1:compile (version managed from 2.12.1)
+[DEBUG]                io.swagger.core.v3:swagger-annotations:jar:2.1.12:compile
+[DEBUG]                io.swagger.core.v3:swagger-models:jar:2.1.12:compile
+[DEBUG]       org.webjars:swagger-ui:jar:4.1.3:compile
+[DEBUG]       org.webjars:webjars-locator-core:jar:0.48:compile (version managed from 0.45)
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.13.1:compile (version managed from 2.12.5)
+[DEBUG]       io.github.classgraph:classgraph:jar:4.8.138:compile
+[DEBUG]    org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test
+[DEBUG]       org.opentest4j:opentest4j:jar:1.2.0:test
+[DEBUG]       org.junit.platform:junit-platform-commons:jar:1.8.2:test (version managed from 1.8.2)
+[DEBUG]       org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ register ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=120200, ConflictMarker.markTime=71289, ConflictMarker.nodeCount=14, ConflictIdSorter.graphTime=63813, ConflictIdSorter.topsortTime=16370, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=227623, ConflictResolver.conflictItemCount=14, DefaultDependencyCollector.collectTime=64493640, DefaultDependencyCollector.transformTime=559236}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.1.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/richard/projects/register/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/richard/projects/register/target/classes
+[DEBUG]   (f) reportDirectory = /Users/richard/projects/register/target/classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/richard/projects/register/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/richard/projects/register/target
+[INFO] Deleting directory /Users/richard/projects/register/target/generated-test-sources/test-annotations
+[INFO] Deleting directory /Users/richard/projects/register/target/generated-test-sources
+[INFO] Deleting file /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting file /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting file /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+[INFO] Deleting file /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status/maven-compiler-plugin/testCompile
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /Users/richard/projects/register/target/maven-status
+[INFO] Deleting file /Users/richard/projects/register/target/classes/application.properties
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/service/CourseService.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/service/StudentService.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/service/CourseServiceImpl.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/service/StudentServiceImpl.class
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register/service
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/controller/RegistrationController$FilterMode.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/controller/RegistrationController$1.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/controller/RegistrationController.class
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register/controller
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/RegisterApplication.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Student.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Registration$RegistrationBuilder.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Course$CourseBuilder.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Course.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Registration.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/Student$StudentBuilder.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/entity/AbstractEntity.class
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register/entity
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/messages/FilterCriteria.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/messages/ResponseMessage.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/messages/ResponseMessage$ResponseMessageBuilder.class
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register/messages
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/repository/RegistrationRepository.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/repository/CourseRepository.class
+[INFO] Deleting file /Users/richard/projects/register/target/classes/com/registration/register/repository/StudentRepository.class
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register/repository
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration/register
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com/registration
+[INFO] Deleting directory /Users/richard/projects/register/target/classes/com
+[INFO] Deleting file /Users/richard/projects/register/target/classes/schema.sql
+[INFO] Deleting file /Users/richard/projects/register/target/classes/application-dev.properties
+[INFO] Deleting directory /Users/richard/projects/register/target/classes
+[INFO] Deleting directory /Users/richard/projects/register/target/generated-sources/annotations
+[INFO] Deleting directory /Users/richard/projects/register/target/generated-sources
+[INFO] Deleting file /Users/richard/projects/register/target/test-classes/application-test.properties
+[INFO] Deleting file /Users/richard/projects/register/target/test-classes/create-database.sql
+[INFO] Deleting directory /Users/richard/projects/register/target/test-classes
+[INFO] Deleting directory /Users/richard/projects/register/target
+[DEBUG] Skipping non-existing directory /Users/richard/projects/register/target/classes
+[DEBUG] Skipping non-existing directory /Users/richard/projects/register/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/richard/projects/register/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ register ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for repository.jboss.org (http://repository.jboss.org/maven2).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for snapshots.jboss.org (http://snapshots.jboss.org/maven2).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for oss.sonatype.org/jboss-snapshots (http://oss.sonatype.org/content/repositories/jboss-snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=140939, ConflictMarker.markTime=52064, ConflictMarker.nodeCount=99, ConflictIdSorter.graphTime=84497, ConflictIdSorter.topsortTime=35330, ConflictIdSorter.conflictIdCount=35, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=740857, ConflictResolver.conflictItemCount=85, DefaultDependencyCollector.collectTime=189482229, DefaultDependencyCollector.transformTime=1085917}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.1.0:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.1.0:compile
+[DEBUG]          org.eclipse.aether:aether-spi:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-impl:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-api:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:0.9.0.M2:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.10:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.4.2:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[DEBUG]    org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.0.0.M2a:compile
+[DEBUG]       javax.enterprise:cdi-api:jar:1.0:compile
+[DEBUG]          javax.annotation:jsr250-api:jar:1.0:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]       com.google.guava:guava:jar:10.0.1:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[DEBUG]       org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a:compile
+[DEBUG]          asm:asm:jar:3.3.1:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.2.0:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.3.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.6:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.8.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.10
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
+[DEBUG]   Included: javax.annotation:jsr250-api:jar:1.0
+[DEBUG]   Included: com.google.guava:guava:jar:10.0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:1.3.9
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a
+[DEBUG]   Included: asm:asm:jar:3.3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.8.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/richard/projects/register/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.registration:register:0.0.1-SNAPSHOT @ /Users/richard/projects/register/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /Users/richard/projects/register/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Users/richard/projects/register/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@670ce331
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {spring-integration.version=5.5.8, flyway.version=8.0.5, java.specification.version=17, glassfish-jstl.version=1.2.6, java.vendor.url=https://github.com/Homebrew/homebrew-core/issues, sun.boot.library.path=/usr/local/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean verify -X, jdk.debug=release, maven.version=3.8.4, javax-activation.version=1.2.0, kafka.version=3.0.0, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, byte-buddy.version=1.11.22, maven-install-plugin.version=2.5.2, java.runtime.version=17.0.1+1, env.LSCOLORS=Gxfxcxdxbxegedabagacad, env.MVN_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/maven-3.6.3/bin, httpclient5.version=5.1.2, env.__CFBundleIdentifier=com.apple.Terminal, java.vendor.version=Homebrew, micrometer.version=1.8.2, rxjava-adapter.version=1.2.1, project.baseUri=file:/Users/richard/projects/register/, hibernate.version=5.6.4.Final, java.io.tmpdir=/var/folders/mt/dgy8rg850ng__5594gpf2r_c0000gn/T/, java.version=17.0.1, javax-persistence.version=2.2, jakarta-ws-rs.version=2.1.6, build-helper-maven-plugin.version=3.2.0, mockito.version=4.0.0, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=12.1.11.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.3.0, native.encoding=UTF-8, java.library.path=/Users/richard/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., jakarta-servlet.version=4.0.4, java.vendor=Homebrew, thymeleaf-extras-java8time.version=3.0.4.RELEASE, undertow.version=2.2.14.Final, mariadb.version=2.7.5, selenium-htmlunit.version=2.54.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.9.9, jakarta-xml-bind.version=2.3.3, commons-dbcp2.version=2.9.0, env.LANG=en_CA.UTF-8, mongodb.version=4.4.1, java.vm.specification.version=17, javax-transaction.version=1.3, maven.compiler.source=15, user.home=/Users/richard, postgresql.version=42.3.1, reactive-streams.version=1.0.3, jmustache.version=1.15, querydsl.version=5.0.0, appengine-sdk.version=1.9.93, thymeleaf-layout-dialect.version=3.0.0, hamcrest.version=2.2, env.FLUTTER_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/flutter/bin, os.version=11.6.4, commons-pool.version=1.6, jakarta-jms.version=2.0.3, jakarta-transaction.version=1.3.3, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.2.0, mimepull.version=1.9.15, json-path.version=2.6.0, jaxen.version=1.2.0, johnzon.version=1.2.15, os.arch=x86_64, spring-batch.version=4.3.4, couchbase-client.version=3.2.4, derby.version=10.14.2.0, javax-jsonb.version=1.0, rxjava2.version=2.2.21, javax-jaxws.version=2.3.1, json-smart.version=2.4.7, javax-websocket.version=1.1, commons-codec.version=1.15, caffeine.version=2.9.3, h2.version=1.4.200, env.JAVA_HOME=/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home, java.vm.compressedOopsMode=Zero based, testcontainers.version=1.16.3, pooled-jms.version=1.2.3, unboundid-ldapsdk.version=4.0.14, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.36.0.3, jakarta-servlet-jsp-jstl.version=1.2.7, activemq.version=5.16.3, httpasyncclient.version=4.1.5, jtds.version=1.3.1, javax-jms.version=2.0.1, jakarta-websocket.version=1.1.2, env.LOGNAME=richard, env.__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52, spring-security.version=5.6.1, hibernate-validator.version=6.2.0.Final, assertj.version=3.21.0, jakarta-xml-soap.version=1.4.2, env.SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.IQCfYKAVof/Listeners, influxdb-java.version=2.22, httpcore5.version=5.1.3, lombok.version=1.18.22, maven.compiler.target=15, env.TMPDIR=/var/folders/mt/dgy8rg850ng__5594gpf2r_c0000gn/T/, jakarta-xml-ws.version=2.3.3, library.jansi.path=/usr/local/Cellar/maven/3.8.4/libexec/lib/jansi-native, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, commons-pool2.version=2.11.1, jackson-bom.version=2.13.1, env.PAGER=less, spring-retry.version=1.3.1, maven-invoker-plugin.version=3.2.2, maven-antrun-plugin.version=3.0.0, maven.conf=/usr/local/Cellar/maven/3.8.4/libexec/conf, sun.java.launcher=SUN_STANDARD, user.country=CA, resource.delimiter=@, javax-json.version=1.1.4, jboss-logging.version=3.4.3.Final, maven-resources-plugin.version=3.2.0, javax-validation.version=2.0.1.Final, netty.version=4.1.73.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.2.1, jetty.version=9.4.44.v20210927, rxjava.version=1.3.8, elasticsearch.version=7.15.2, java.runtime.name=OpenJDK Runtime Environment, rest-assured.version=4.4.0, maven-deploy-plugin.version=2.8.2, env.MAVEN_CMD_LINE_ARGS= clean verify -X, log4j2.version=2.17.1, maven-failsafe-plugin.version=2.22.2, spring-framework.version=5.3.15, dropwizard-metrics.version=4.2.7, git-commit-id-plugin.version=4.9.10, kotlin-coroutines.version=1.5.2, hazelcast-hibernate5.version=2.2.1, htmlunit.version=2.54.0, env.TERM=xterm-256color, sun.arch.data.model=64, spring-restdocs.version=2.0.6.RELEASE, freemarker.version=2.3.31, thymeleaf.version=3.0.14.RELEASE, jakarta-json.version=1.1.6, janino.version=3.1.6, maven-jar-plugin.version=3.2.2, maven-compiler-plugin.version=3.8.1, java.specification.vendor=Oracle Corporation, rabbit-amqp-client.version=5.13.1, java.version.date=2021-10-19, spring-amqp.version=2.4.2, java.home=/usr/local/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home, maven-war-plugin.version=3.3.2, jolokia.version=1.7.1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.1.10, env.PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin, maven-dependency-plugin.version=3.2.0, httpclient.version=4.5.13, jsonassert.version=1.5.0, file.encoding=UTF-8, gson.version=2.8.9, sun-mail.version=1.6.7, env.DART_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/flutter/bin:/Users/richard/dart-sdk/bin, jakarta-annotation.version=1.3.5, env.SHLVL=1, mssql-jdbc.version=9.4.1.jre8, snakeyaml.version=1.29, okhttp3.version=3.14.9, liquibase.version=4.5.0, prometheus-client.version=0.12.0, httpcore.version=4.4.15, lettuce.version=6.1.6.RELEASE, classworlds.conf=/usr/local/Cellar/maven/3.8.4/libexec/bin/m2.conf, sun.io.unicode.encoding=UnicodeBig, kotlin.version=1.6.10, wsdl4j.version=1.6.3, jakarta-management.version=1.1.4, tomcat.version=9.0.56, sendgrid.version=4.7.6, glassfish-jaxb.version=2.3.5, spring-ws.version=3.1.2, commons-lang3.version=3.12.0, os.name=Mac OS X, junit.version=4.13.2, env.LaunchInstanceID=CCFC234F-4AB1-4890-9BA4-FB575E6A4927, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jetty-el.version=9.0.52, db2-jdbc.version=11.5.7.0, maven.build.timestamp=2022-03-05T21:23:38Z, reactor-bom.version=2020.0.15, env.ZSH=/Users/richard/.oh-my-zsh, maven-enforcer-plugin.version=3.0.0, jstl.version=1.2, quartz.version=2.3.2, javax-money.version=1.1, spring-hateoas.version=1.4.1, path.separator=:, env.SHELL=/bin/zsh, jakarta-validation.version=2.0.2, maven.multiModuleProjectDirectory=/Users/richard/projects/register, oracle-database.version=21.3.0.0, env.MAVEN_PROJECTBASEDIR=/Users/richard/projects/register, java.vm.info=mixed mode, sharing, cassandra-driver.version=4.13.0, env.USER=richard, java.class.version=61.0, xml-maven-plugin.version=1.0.2, sun.jnu.encoding=UTF-8, xmlunit2.version=2.8.4, jakarta-mail.version=1.6.7, slf4j.version=1.7.33, r2dbc-bom.version=Arabba-SR12, solr.version=8.8.2, saaj-impl.version=1.5.3, maven.build.version=Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537), hikaricp.version=4.0.3, maven.home=/usr/local/Cellar/maven/3.8.4/libexec, netty-tcnative.version=2.0.47.Final, maven-shade-plugin.version=3.2.4, sun.stderr.encoding=UTF-8, jakarta-json-bind.version=1.0.2, file.separator=/, env.LESS=-R, line.separator=
+, spring-kafka.version=2.8.2, env.JAVA_MAIN_CLASS_83381=org.codehaus.plexus.classworlds.launcher.Launcher, jersey.version=2.35, env.TERM_PROGRAM_VERSION=440, user.name=richard, env.XPC_FLAGS=0x0, hazelcast.version=4.2.4, jdom2.version=2.0.6.1, atomikos.version=4.0.6, aspectj.version=1.9.7, env.TERM_SESSION_ID=AAE77CA5-E87F-4A5A-BEC7-CDDAB4C1FA30, hsqldb.version=2.5.2, webjars-locator-core.version=0.48, project.reporting.outputEncoding=UTF-8, awaitility.version=4.1.1, env.TERM_PROGRAM=Apple_Terminal, env.OLDPWD=/Users/richard/projects/register, env.PWD=/Users/richard/projects/register, embedded-mongo.version=3.0.0, spring-ldap.version=2.3.5.RELEASE, java.class.path=/usr/local/Cellar/maven/3.8.4/libexec/boot/plexus-classworlds-2.6.0.jar, dependency-management-plugin.version=1.0.11.RELEASE, env.HOME=/Users/richard, env.SECURITYSESSIONID=186a8, java.vm.vendor=Homebrew, rabbit-stream-client.version=0.4.0, maven-javadoc-plugin.version=3.3.1, servlet-api.version=4.0.1, rsocket.version=1.1.1, jakarta-persistence.version=2.2.3, artemis.version=2.19.0, groovy.version=3.0.9, javax-cache.version=1.1.1, logback.version=1.2.10, sun.cpu.endian=little, versions-maven-plugin.version=2.8.1, user.language=en, jedis.version=3.7.1, maven-clean-plugin.version=3.1.0, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.2, javax-annotation.version=1.3.2, spring-data-bom.version=2021.1.1, mysql.version=8.0.28, classmate.version=1.5.1, jaybird.version=4.0.5.java8, antlr2.version=2.7.7, env.XPC_SERVICE_NAME=0, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, selenium.version=3.141.59, glassfish-el.version=3.0.4, project.build.sourceEncoding=UTF-8, jooq.version=3.14.15, java.vendor.url.bug=https://github.com/Homebrew/homebrew-core/issues, user.dir=/Users/richard/projects/register, ehcache.version=2.10.9.2, junit-jupiter.version=5.8.2, java.vm.version=17.0.1+1, neo4j-java-driver.version=4.4.2, jakarta-activation.version=1.2.2, spring-session-bom.version=2021.1.1}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /Users/richard/projects/register/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[DEBUG] ignoreDelta true
+[INFO] Copying 2 resources
+[DEBUG] Copying file application-dev.properties
+[DEBUG] file application-dev.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application-dev.properties'.
+[DEBUG] filtering /Users/richard/projects/register/src/main/resources/application-dev.properties to /Users/richard/projects/register/target/classes/application-dev.properties
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[DEBUG] filtering /Users/richard/projects/register/src/main/resources/application.properties to /Users/richard/projects/register/target/classes/application.properties
+[DEBUG] resource with targetPath null
+directory /Users/richard/projects/register/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] Copying file schema.sql
+[DEBUG] file schema.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'schema.sql'.
+[DEBUG] copy /Users/richard/projects/register/src/main/resources/schema.sql to /Users/richard/projects/register/target/classes/schema.sql
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ register ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=220360, ConflictMarker.markTime=101478, ConflictMarker.nodeCount=118, ConflictIdSorter.graphTime=124368, ConflictIdSorter.topsortTime=68560, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5466799, ConflictResolver.conflictItemCount=72, DefaultDependencyCollector.collectTime=195683374, DefaultDependencyCollector.transformTime=6024601}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.1
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:0.9.10:compile
+[DEBUG]       org.ow2.asm:asm:jar:6.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:0.9.10
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /Users/richard/projects/register
+[DEBUG]   (f) buildDirectory = /Users/richard/projects/register/target
+[DEBUG]   (f) compilePath = [/Users/richard/projects/register/target/classes, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar, /Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar, /Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar, /Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar, /Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, /Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar, /Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar, /Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar, /Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, /Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar, /Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar, /Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar, /Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar, /Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar, /Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar, /Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar, /Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar, /Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar, /Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar, /Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, /Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar, /Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, /Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar, /Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar, /Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar, /Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar, /Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar, /Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar, /Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar, /Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar, /Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar, /Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar, /Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar, /Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/richard/projects/register/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Users/richard/projects/register/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/richard/projects/register/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.registration:register:0.0.1-SNAPSHOT @ /Users/richard/projects/register/pom.xml
+[DEBUG]   (f) projectArtifact = com.registration:register:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@670ce331
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 15
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 15
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/richard/projects/register/target/generated-sources/annotations to compile source roots:
+  /Users/richard/projects/register/src/main/java
+[DEBUG] New compile source roots:
+  /Users/richard/projects/register/src/main/java
+  /Users/richard/projects/register/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/entity/AbstractEntity.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/entity/Registration.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/service/StudentService.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/service/StudentServiceImpl.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/service/CourseService.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/entity/Course.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/repository/StudentRepository.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/RegisterApplication.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/messages/ResponseMessage.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/repository/CourseRepository.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/controller/RegistrationController.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/repository/RegistrationRepository.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/messages/FilterCriteria.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/entity/Student.java
+[DEBUG] Stale source detected: /Users/richard/projects/register/src/main/java/com/registration/register/service/CourseServiceImpl.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /Users/richard/projects/register/target/classes
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar
+[DEBUG]  /Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[DEBUG]  /Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar
+[DEBUG]  /Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar
+[DEBUG] Source roots:
+[DEBUG]  /Users/richard/projects/register/src/main/java
+[DEBUG]  /Users/richard/projects/register/target/generated-sources/annotations
+[DEBUG] Command line options:
+[DEBUG] -d /Users/richard/projects/register/target/classes -classpath /Users/richard/projects/register/target/classes:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar:/Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar:/Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar:/Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar:/Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar:/Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar:/Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar:/Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar:/Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar:/Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar:/Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar:/Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar:/Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar:/Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar:/Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar:/Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar:/Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar:/Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar:/Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar:/Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar: -sourcepath /Users/richard/projects/register/src/main/java:/Users/richard/projects/register/target/generated-sources/annotations: -s /Users/richard/projects/register/target/generated-sources/annotations -g -parameters -nowarn -target 15 -source 15 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 15 source files to /Users/richard/projects/register/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] /Users/richard/projects/register/src/main/java/com/registration/register/controller/RegistrationController.java: /Users/richard/projects/register/src/main/java/com/registration/register/controller/RegistrationController.java uses unchecked or unsafe operations.
+[INFO] /Users/richard/projects/register/src/main/java/com/registration/register/controller/RegistrationController.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ register ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/richard/projects/register/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.registration:register:0.0.1-SNAPSHOT @ /Users/richard/projects/register/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Users/richard/projects/register/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@670ce331
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {spring-integration.version=5.5.8, flyway.version=8.0.5, java.specification.version=17, glassfish-jstl.version=1.2.6, java.vendor.url=https://github.com/Homebrew/homebrew-core/issues, sun.boot.library.path=/usr/local/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean verify -X, jdk.debug=release, maven.version=3.8.4, javax-activation.version=1.2.0, kafka.version=3.0.0, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, byte-buddy.version=1.11.22, maven-install-plugin.version=2.5.2, java.runtime.version=17.0.1+1, env.LSCOLORS=Gxfxcxdxbxegedabagacad, env.MVN_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/maven-3.6.3/bin, httpclient5.version=5.1.2, env.__CFBundleIdentifier=com.apple.Terminal, java.vendor.version=Homebrew, micrometer.version=1.8.2, rxjava-adapter.version=1.2.1, project.baseUri=file:/Users/richard/projects/register/, hibernate.version=5.6.4.Final, java.io.tmpdir=/var/folders/mt/dgy8rg850ng__5594gpf2r_c0000gn/T/, java.version=17.0.1, javax-persistence.version=2.2, jakarta-ws-rs.version=2.1.6, build-helper-maven-plugin.version=3.2.0, mockito.version=4.0.0, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=12.1.11.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.3.0, native.encoding=UTF-8, java.library.path=/Users/richard/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., jakarta-servlet.version=4.0.4, java.vendor=Homebrew, thymeleaf-extras-java8time.version=3.0.4.RELEASE, undertow.version=2.2.14.Final, mariadb.version=2.7.5, selenium-htmlunit.version=2.54.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.9.9, jakarta-xml-bind.version=2.3.3, commons-dbcp2.version=2.9.0, env.LANG=en_CA.UTF-8, mongodb.version=4.4.1, java.vm.specification.version=17, javax-transaction.version=1.3, maven.compiler.source=15, user.home=/Users/richard, postgresql.version=42.3.1, reactive-streams.version=1.0.3, jmustache.version=1.15, querydsl.version=5.0.0, appengine-sdk.version=1.9.93, thymeleaf-layout-dialect.version=3.0.0, hamcrest.version=2.2, env.FLUTTER_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/flutter/bin, os.version=11.6.4, commons-pool.version=1.6, jakarta-jms.version=2.0.3, jakarta-transaction.version=1.3.3, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.2.0, mimepull.version=1.9.15, json-path.version=2.6.0, jaxen.version=1.2.0, johnzon.version=1.2.15, os.arch=x86_64, spring-batch.version=4.3.4, couchbase-client.version=3.2.4, derby.version=10.14.2.0, javax-jsonb.version=1.0, rxjava2.version=2.2.21, javax-jaxws.version=2.3.1, json-smart.version=2.4.7, javax-websocket.version=1.1, commons-codec.version=1.15, caffeine.version=2.9.3, h2.version=1.4.200, env.JAVA_HOME=/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home, java.vm.compressedOopsMode=Zero based, testcontainers.version=1.16.3, pooled-jms.version=1.2.3, unboundid-ldapsdk.version=4.0.14, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.36.0.3, jakarta-servlet-jsp-jstl.version=1.2.7, activemq.version=5.16.3, httpasyncclient.version=4.1.5, jtds.version=1.3.1, javax-jms.version=2.0.1, jakarta-websocket.version=1.1.2, env.LOGNAME=richard, env.__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52, spring-security.version=5.6.1, hibernate-validator.version=6.2.0.Final, assertj.version=3.21.0, jakarta-xml-soap.version=1.4.2, env.SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.IQCfYKAVof/Listeners, influxdb-java.version=2.22, httpcore5.version=5.1.3, lombok.version=1.18.22, maven.compiler.target=15, env.TMPDIR=/var/folders/mt/dgy8rg850ng__5594gpf2r_c0000gn/T/, jakarta-xml-ws.version=2.3.3, library.jansi.path=/usr/local/Cellar/maven/3.8.4/libexec/lib/jansi-native, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, commons-pool2.version=2.11.1, jackson-bom.version=2.13.1, env.PAGER=less, spring-retry.version=1.3.1, maven-invoker-plugin.version=3.2.2, maven-antrun-plugin.version=3.0.0, maven.conf=/usr/local/Cellar/maven/3.8.4/libexec/conf, sun.java.launcher=SUN_STANDARD, user.country=CA, resource.delimiter=@, javax-json.version=1.1.4, jboss-logging.version=3.4.3.Final, maven-resources-plugin.version=3.2.0, javax-validation.version=2.0.1.Final, netty.version=4.1.73.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.2.1, jetty.version=9.4.44.v20210927, rxjava.version=1.3.8, elasticsearch.version=7.15.2, java.runtime.name=OpenJDK Runtime Environment, rest-assured.version=4.4.0, maven-deploy-plugin.version=2.8.2, env.MAVEN_CMD_LINE_ARGS= clean verify -X, log4j2.version=2.17.1, maven-failsafe-plugin.version=2.22.2, spring-framework.version=5.3.15, dropwizard-metrics.version=4.2.7, git-commit-id-plugin.version=4.9.10, kotlin-coroutines.version=1.5.2, hazelcast-hibernate5.version=2.2.1, htmlunit.version=2.54.0, env.TERM=xterm-256color, sun.arch.data.model=64, spring-restdocs.version=2.0.6.RELEASE, freemarker.version=2.3.31, thymeleaf.version=3.0.14.RELEASE, jakarta-json.version=1.1.6, janino.version=3.1.6, maven-jar-plugin.version=3.2.2, maven-compiler-plugin.version=3.8.1, java.specification.vendor=Oracle Corporation, rabbit-amqp-client.version=5.13.1, java.version.date=2021-10-19, spring-amqp.version=2.4.2, java.home=/usr/local/Cellar/openjdk/17.0.1_1/libexec/openjdk.jdk/Contents/Home, maven-war-plugin.version=3.3.2, jolokia.version=1.7.1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.1.10, env.PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin, maven-dependency-plugin.version=3.2.0, httpclient.version=4.5.13, jsonassert.version=1.5.0, file.encoding=UTF-8, gson.version=2.8.9, sun-mail.version=1.6.7, env.DART_PATH=/Users/richard/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richard/flutter/bin:/Users/richard/dart-sdk/bin, jakarta-annotation.version=1.3.5, env.SHLVL=1, mssql-jdbc.version=9.4.1.jre8, snakeyaml.version=1.29, okhttp3.version=3.14.9, liquibase.version=4.5.0, prometheus-client.version=0.12.0, httpcore.version=4.4.15, lettuce.version=6.1.6.RELEASE, classworlds.conf=/usr/local/Cellar/maven/3.8.4/libexec/bin/m2.conf, sun.io.unicode.encoding=UnicodeBig, kotlin.version=1.6.10, wsdl4j.version=1.6.3, jakarta-management.version=1.1.4, tomcat.version=9.0.56, sendgrid.version=4.7.6, glassfish-jaxb.version=2.3.5, spring-ws.version=3.1.2, commons-lang3.version=3.12.0, os.name=Mac OS X, junit.version=4.13.2, env.LaunchInstanceID=CCFC234F-4AB1-4890-9BA4-FB575E6A4927, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jetty-el.version=9.0.52, db2-jdbc.version=11.5.7.0, maven.build.timestamp=2022-03-05T21:23:41Z, reactor-bom.version=2020.0.15, env.ZSH=/Users/richard/.oh-my-zsh, maven-enforcer-plugin.version=3.0.0, jstl.version=1.2, quartz.version=2.3.2, javax-money.version=1.1, spring-hateoas.version=1.4.1, path.separator=:, env.SHELL=/bin/zsh, jakarta-validation.version=2.0.2, maven.multiModuleProjectDirectory=/Users/richard/projects/register, oracle-database.version=21.3.0.0, env.MAVEN_PROJECTBASEDIR=/Users/richard/projects/register, java.vm.info=mixed mode, sharing, cassandra-driver.version=4.13.0, env.USER=richard, java.class.version=61.0, xml-maven-plugin.version=1.0.2, sun.jnu.encoding=UTF-8, xmlunit2.version=2.8.4, jakarta-mail.version=1.6.7, slf4j.version=1.7.33, r2dbc-bom.version=Arabba-SR12, solr.version=8.8.2, saaj-impl.version=1.5.3, maven.build.version=Apache Maven 3.8.4 (9b656c72d54e5bacbed989b64718c159fe39b537), hikaricp.version=4.0.3, maven.home=/usr/local/Cellar/maven/3.8.4/libexec, netty-tcnative.version=2.0.47.Final, maven-shade-plugin.version=3.2.4, sun.stderr.encoding=UTF-8, jakarta-json-bind.version=1.0.2, file.separator=/, env.LESS=-R, line.separator=
+, spring-kafka.version=2.8.2, env.JAVA_MAIN_CLASS_83381=org.codehaus.plexus.classworlds.launcher.Launcher, jersey.version=2.35, env.TERM_PROGRAM_VERSION=440, user.name=richard, env.XPC_FLAGS=0x0, hazelcast.version=4.2.4, jdom2.version=2.0.6.1, atomikos.version=4.0.6, aspectj.version=1.9.7, env.TERM_SESSION_ID=AAE77CA5-E87F-4A5A-BEC7-CDDAB4C1FA30, hsqldb.version=2.5.2, webjars-locator-core.version=0.48, project.reporting.outputEncoding=UTF-8, awaitility.version=4.1.1, env.TERM_PROGRAM=Apple_Terminal, env.OLDPWD=/Users/richard/projects/register, env.PWD=/Users/richard/projects/register, embedded-mongo.version=3.0.0, spring-ldap.version=2.3.5.RELEASE, java.class.path=/usr/local/Cellar/maven/3.8.4/libexec/boot/plexus-classworlds-2.6.0.jar, dependency-management-plugin.version=1.0.11.RELEASE, env.HOME=/Users/richard, env.SECURITYSESSIONID=186a8, java.vm.vendor=Homebrew, rabbit-stream-client.version=0.4.0, maven-javadoc-plugin.version=3.3.1, servlet-api.version=4.0.1, rsocket.version=1.1.1, jakarta-persistence.version=2.2.3, artemis.version=2.19.0, groovy.version=3.0.9, javax-cache.version=1.1.1, logback.version=1.2.10, sun.cpu.endian=little, versions-maven-plugin.version=2.8.1, user.language=en, jedis.version=3.7.1, maven-clean-plugin.version=3.1.0, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.2, javax-annotation.version=1.3.2, spring-data-bom.version=2021.1.1, mysql.version=8.0.28, classmate.version=1.5.1, jaybird.version=4.0.5.java8, antlr2.version=2.7.7, env.XPC_SERVICE_NAME=0, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, selenium.version=3.141.59, glassfish-el.version=3.0.4, project.build.sourceEncoding=UTF-8, jooq.version=3.14.15, java.vendor.url.bug=https://github.com/Homebrew/homebrew-core/issues, user.dir=/Users/richard/projects/register, ehcache.version=2.10.9.2, junit-jupiter.version=5.8.2, java.vm.version=17.0.1+1, neo4j-java-driver.version=4.4.2, jakarta-activation.version=1.2.2, spring-session-bom.version=2021.1.1}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /Users/richard/projects/register/src/test/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 2 resources
+[DEBUG] Copying file create-database.sql
+[DEBUG] file create-database.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'create-database.sql'.
+[DEBUG] copy /Users/richard/projects/register/src/test/resources/create-database.sql to /Users/richard/projects/register/target/test-classes/create-database.sql
+[DEBUG] Copying file application-test.properties
+[DEBUG] file application-test.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application-test.properties'.
+[DEBUG] copy /Users/richard/projects/register/src/test/resources/application-test.properties to /Users/richard/projects/register/target/test-classes/application-test.properties
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ register ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /Users/richard/projects/register
+[DEBUG]   (f) buildDirectory = /Users/richard/projects/register/target
+[DEBUG]   (f) compilePath = [/Users/richard/projects/register/target/classes, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar, /Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar, /Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar, /Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar, /Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, /Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar, /Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar, /Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar, /Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, /Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar, /Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar, /Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar, /Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar, /Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar, /Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar, /Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar, /Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar, /Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar, /Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar, /Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, /Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar, /Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, /Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar, /Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar, /Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar, /Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar, /Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar, /Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar, /Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar, /Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar, /Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar, /Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar, /Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar, /Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/richard/projects/register/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /Users/richard/projects/register/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/richard/projects/register/target/test-classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.registration:register:0.0.1-SNAPSHOT @ /Users/richard/projects/register/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@670ce331
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 15
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 15
+[DEBUG]   (f) testPath = [/Users/richard/projects/register/target/test-classes, /Users/richard/projects/register/target/classes, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar, /Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar, /Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar, /Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar, /Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, /Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar, /Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar, /Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar, /Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, /Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar, /Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar, /Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar, /Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar, /Users/richard/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar, /Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar, /Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar, /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar, /Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar, /Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar, /Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar, /Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar, /Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar, /Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar, /Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar, /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar, /Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar, /Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, /Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar, /Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, /Users/richard/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar, /Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar, /Users/richard/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.6.3/spring-boot-starter-test-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-test/2.6.3/spring-boot-test-2.6.3.jar, /Users/richard/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.6.3/spring-boot-test-autoconfigure-2.6.3.jar, /Users/richard/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar, /Users/richard/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar, /Users/richard/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar, /Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar, /Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar, /Users/richard/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0.jar, /Users/richard/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar, /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar, /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar, /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar, /Users/richard/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar, /Users/richard/.m2/repository/org/mockito/mockito-core/4.0.0/mockito-core-4.0.0.jar, /Users/richard/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.22/byte-buddy-agent-1.11.22.jar, /Users/richard/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar, /Users/richard/.m2/repository/org/mockito/mockito-junit-jupiter/4.0.0/mockito-junit-jupiter-4.0.0.jar, /Users/richard/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar, /Users/richard/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, /Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar, /Users/richard/.m2/repository/org/springframework/spring-test/5.3.15/spring-test-5.3.15.jar, /Users/richard/.m2/repository/org/xmlunit/xmlunit-core/2.8.4/xmlunit-core-2.8.4.jar, /Users/richard/.m2/repository/org/testcontainers/junit-jupiter/1.16.3/junit-jupiter-1.16.3.jar, /Users/richard/.m2/repository/org/testcontainers/testcontainers/1.16.3/testcontainers-1.16.3.jar, /Users/richard/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar, /Users/richard/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar, /Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar, /Users/richard/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar, /Users/richard/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar, /Users/richard/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar, /Users/richard/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar, /Users/richard/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12.jar, /Users/richard/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar, /Users/richard/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar, /Users/richard/.m2/repository/org/testcontainers/mysql/1.16.3/mysql-1.16.3.jar, /Users/richard/.m2/repository/org/testcontainers/jdbc/1.16.3/jdbc-1.16.3.jar, /Users/richard/.m2/repository/org/testcontainers/database-commons/1.16.3/database-commons-1.16.3.jar, /Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar, /Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar, /Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar, /Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar, /Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar, /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar, /Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar, /Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar, /Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar, /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar, /Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar, /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar, /Users/richard/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar, /Users/richard/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar, /Users/richard/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/richard/projects/register/target/generated-test-sources/test-annotations to test-compile source roots:
+  /Users/richard/projects/register/src/test/java
+[DEBUG] New test-compile source roots:
+  /Users/richard/projects/register/src/test/java
+  /Users/richard/projects/register/target/generated-test-sources/test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] New dependency detected: /Users/richard/projects/register/target/classes
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /Users/richard/projects/register/target/test-classes
+[DEBUG]  /Users/richard/projects/register/target/classes
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar
+[DEBUG]  /Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[DEBUG]  /Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar
+[DEBUG]  /Users/richard/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar
+[DEBUG]  /Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+[DEBUG]  /Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+[DEBUG]  /Users/richard/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar
+[DEBUG]  /Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar
+[DEBUG]  /Users/richard/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.6.3/spring-boot-starter-test-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-test/2.6.3/spring-boot-test-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.6.3/spring-boot-test-autoconfigure-2.6.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar
+[DEBUG]  /Users/richard/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar
+[DEBUG]  /Users/richard/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+[DEBUG]  /Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/mockito/mockito-core/4.0.0/mockito-core-4.0.0.jar
+[DEBUG]  /Users/richard/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.22/byte-buddy-agent-1.11.22.jar
+[DEBUG]  /Users/richard/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/mockito/mockito-junit-jupiter/4.0.0/mockito-junit-jupiter-4.0.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar
+[DEBUG]  /Users/richard/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springframework/spring-test/5.3.15/spring-test-5.3.15.jar
+[DEBUG]  /Users/richard/.m2/repository/org/xmlunit/xmlunit-core/2.8.4/xmlunit-core-2.8.4.jar
+[DEBUG]  /Users/richard/.m2/repository/org/testcontainers/junit-jupiter/1.16.3/junit-jupiter-1.16.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/testcontainers/testcontainers/1.16.3/testcontainers-1.16.3.jar
+[DEBUG]  /Users/richard/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar
+[DEBUG]  /Users/richard/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar
+[DEBUG]  /Users/richard/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar
+[DEBUG]  /Users/richard/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/testcontainers/mysql/1.16.3/mysql-1.16.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/testcontainers/jdbc/1.16.3/jdbc-1.16.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/testcontainers/database-commons/1.16.3/database-commons-1.16.3.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar
+[DEBUG]  /Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar
+[DEBUG]  /Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar
+[DEBUG]  /Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar
+[DEBUG]  /Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar
+[DEBUG]  /Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar
+[DEBUG]  /Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+[DEBUG]  /Users/richard/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar
+[DEBUG]  /Users/richard/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+[DEBUG] Source roots:
+[DEBUG]  /Users/richard/projects/register/src/test/java
+[DEBUG]  /Users/richard/projects/register/target/generated-test-sources/test-annotations
+[DEBUG] Command line options:
+[DEBUG] -d /Users/richard/projects/register/target/test-classes -classpath /Users/richard/projects/register/target/test-classes:/Users/richard/projects/register/target/classes:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.3/spring-boot-starter-data-jpa-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.3/spring-boot-starter-aop-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar:/Users/richard/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.3/spring-boot-starter-jdbc-2.6.3.jar:/Users/richard/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/Users/richard/.m2/repository/org/springframework/spring-jdbc/5.3.15/spring-jdbc-5.3.15.jar:/Users/richard/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/richard/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/richard/.m2/repository/org/hibernate/hibernate-core/5.6.4.Final/hibernate-core-5.6.4.Final.jar:/Users/richard/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar:/Users/richard/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/richard/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/richard/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/richard/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/Users/richard/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/Users/richard/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/Users/richard/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/richard/.m2/repository/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar:/Users/richard/.m2/repository/org/springframework/data/spring-data-commons/2.6.1/spring-data-commons-2.6.1.jar:/Users/richard/.m2/repository/org/springframework/spring-orm/5.3.15/spring-orm-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-context/5.3.15/spring-context-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-tx/5.3.15/spring-tx-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-aspects/5.3.15/spring-aspects-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.3/spring-boot-starter-web-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.3/spring-boot-starter-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.3/spring-boot-starter-logging-2.6.3.jar:/Users/richard/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/richard/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/richard/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.1/log4j-to-slf4j-2.17.1.jar:/Users/richard/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/richard/.m2/repository/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33.jar:/Users/richard/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/richard/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.3/spring-boot-starter-json-2.6.3.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.1/jackson-datatype-jdk8-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.1/jackson-datatype-jsr310-2.13.1.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.1/jackson-module-parameter-names-2.13.1.jar:/Users/richard/.m2/repository/org/springframework/spring-web/5.3.15/spring-web-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-webmvc/5.3.15/spring-webmvc-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-jetty/2.6.3/spring-boot-starter-jetty-2.6.3.jar:/Users/richard/.m2/repository/jakarta/servlet/jakarta.servlet-api/4.0.4/jakarta.servlet-api-4.0.4.jar:/Users/richard/.m2/repository/jakarta/websocket/jakarta.websocket-api/1.1.2/jakarta.websocket-api-1.1.2.jar:/Users/richard/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.56/tomcat-embed-el-9.0.56.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.44.v20210927/jetty-servlets-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.44.v20210927/jetty-continuation-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-http/9.4.44.v20210927/jetty-http-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-util/9.4.44.v20210927/jetty-util-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-io/9.4.44.v20210927/jetty-io-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.44.v20210927/jetty-webapp-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.44.v20210927/jetty-xml-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.44.v20210927/jetty-servlet-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-security/9.4.44.v20210927/jetty-security-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-server/9.4.44.v20210927/jetty-server-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.44.v20210927/jetty-util-ajax-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.44.v20210927/websocket-server-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.44.v20210927/websocket-common-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.44.v20210927/websocket-api-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.44.v20210927/websocket-client-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-client/9.4.44.v20210927/jetty-client-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.4.44.v20210927/websocket-servlet-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.4.44.v20210927/javax-websocket-server-impl-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-annotations/9.4.44.v20210927/jetty-annotations-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/eclipse/jetty/jetty-plus/9.4.44.v20210927/jetty-plus-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar:/Users/richard/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar:/Users/richard/.m2/repository/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.44.v20210927/javax-websocket-client-impl-9.4.44.v20210927.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-devtools/2.6.3/spring-boot-devtools-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot/2.6.3/spring-boot-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.3/spring-boot-starter-validation-2.6.3.jar:/Users/richard/.m2/repository/org/hibernate/validator/hibernate-validator/7.0.1.Final/hibernate-validator-7.0.1.Final.jar:/Users/richard/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/richard/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/richard/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/richard/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/richard/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/richard/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.6.3/spring-boot-starter-test-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-test/2.6.3/spring-boot-test-2.6.3.jar:/Users/richard/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.6.3/spring-boot-test-autoconfigure-2.6.3.jar:/Users/richard/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar:/Users/richard/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/richard/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/richard/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/richard/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/richard/.m2/repository/org/assertj/assertj-core/3.21.0/assertj-core-3.21.0.jar:/Users/richard/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/richard/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/richard/.m2/repository/org/mockito/mockito-core/4.0.0/mockito-core-4.0.0.jar:/Users/richard/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.22/byte-buddy-agent-1.11.22.jar:/Users/richard/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/Users/richard/.m2/repository/org/mockito/mockito-junit-jupiter/4.0.0/mockito-junit-jupiter-4.0.0.jar:/Users/richard/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/richard/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/richard/.m2/repository/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar:/Users/richard/.m2/repository/org/springframework/spring-test/5.3.15/spring-test-5.3.15.jar:/Users/richard/.m2/repository/org/xmlunit/xmlunit-core/2.8.4/xmlunit-core-2.8.4.jar:/Users/richard/.m2/repository/org/testcontainers/junit-jupiter/1.16.3/junit-jupiter-1.16.3.jar:/Users/richard/.m2/repository/org/testcontainers/testcontainers/1.16.3/testcontainers-1.16.3.jar:/Users/richard/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/richard/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/richard/.m2/repository/org/slf4j/slf4j-api/1.7.33/slf4j-api-1.7.33.jar:/Users/richard/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/richard/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/Users/richard/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/Users/richard/.m2/repository/com/github/docker-java/docker-java-api/3.2.12/docker-java-api-3.2.12.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar:/Users/richard/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.12/docker-java-transport-zerodep-3.2.12.jar:/Users/richard/.m2/repository/com/github/docker-java/docker-java-transport/3.2.12/docker-java-transport-3.2.12.jar:/Users/richard/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/richard/.m2/repository/org/testcontainers/mysql/1.16.3/mysql-1.16.3.jar:/Users/richard/.m2/repository/org/testcontainers/jdbc/1.16.3/jdbc-1.16.3.jar:/Users/richard/.m2/repository/org/testcontainers/database-commons/1.16.3/database-commons-1.16.3.jar:/Users/richard/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/richard/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/richard/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/richard/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/richard/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-ui/1.6.4/springdoc-openapi-ui-1.6.4.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-webmvc-core/1.6.4/springdoc-openapi-webmvc-core-1.6.4.jar:/Users/richard/.m2/repository/org/springdoc/springdoc-openapi-common/1.6.4/springdoc-openapi-common-1.6.4.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-core/2.1.12/swagger-core-2.1.12.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.1/jackson-dataformat-yaml-2.13.1.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.12/swagger-annotations-2.1.12.jar:/Users/richard/.m2/repository/io/swagger/core/v3/swagger-models/2.1.12/swagger-models-2.1.12.jar:/Users/richard/.m2/repository/org/webjars/swagger-ui/4.1.3/swagger-ui-4.1.3.jar:/Users/richard/.m2/repository/org/webjars/webjars-locator-core/0.48/webjars-locator-core-0.48.jar:/Users/richard/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar:/Users/richard/.m2/repository/io/github/classgraph/classgraph/4.8.138/classgraph-4.8.138.jar:/Users/richard/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/richard/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/richard/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/richard/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar: -sourcepath /Users/richard/projects/register/src/test/java:/Users/richard/projects/register/target/generated-test-sources/test-annotations: -s /Users/richard/projects/register/target/generated-test-sources/test-annotations -g -parameters -nowarn -target 15 -source 15 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 3 source files to /Users/richard/projects/register/target/test-classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/richard/projects/register/src/test/java/com/registration/register/StudentRepositoryTest.java:[41,6] cannot find symbol
+  symbol:   class Container
+  location: class com.registration.register.StudentRepositoryTest
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.910 s
+[INFO] Finished at: 2022-03-05T16:23:42-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project register: Compilation failure
+[ERROR] /Users/richard/projects/register/src/test/java/com/registration/register/StudentRepositoryTest.java:[41,6] cannot find symbol
+[ERROR]   symbol:   class Container
+[ERROR]   location: class com.registration.register.StudentRepositoryTest
+[ERROR] 
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project register: Compilation failure
+/Users/richard/projects/register/src/test/java/com/registration/register/StudentRepositoryTest.java:[41,6] cannot find symbol
+  symbol:   class Container
+  location: class com.registration.register.StudentRepositoryTest
+
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:972)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:293)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:196)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:568)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+/Users/richard/projects/register/src/test/java/com/registration/register/StudentRepositoryTest.java:[41,6] cannot find symbol
+  symbol:   class Container
+  location: class com.registration.register.StudentRepositoryTest
+
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:1220)
+    at org.apache.maven.plugin.compiler.TestCompilerMojo.execute (TestCompilerMojo.java:180)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:972)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:293)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:196)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:568)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

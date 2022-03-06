@@ -168,56 +168,80 @@ public class RegistrationController {
         return ResponseEntity.status(status).body(responseMessage);
     }
 
-    @GetMapping(path = "/course/filter/")
-    public ResponseEntity<ResponseMessage> filterCoursesWithoutStudent(@RequestBody FilterCriteria criteria) {
+    /**
+     *
+     * path example:
+     *              /course/filter?mode=without-student&id=5
+     *              /course/filter/ and /course/filter?mode=without-student
+     *
+     * @param mode filter mode
+     * @param id student id
+     * @return ResponseEntity, augmented with metadata
+     */
+    @GetMapping(path = "/course/filter")
+    public ResponseEntity<ResponseMessage> filterCourse(@RequestParam(defaultValue = "without-student") String mode,
+                                                                       @RequestParam(required = false) Long id) {
+        FilterMode filterMode = FilterMode.valueOf(mode);
 
-        FilterMode filterMode = FilterMode.valueOf(criteria.getMode());
+        // filter without_student
 
-        Map<String, String> meta = new HashMap<>();
-        HttpStatus status = HttpStatus.OK;
-        String message = "";
+        // filter s
+        if(id != null) {}
 
-        ResponseMessage responseMessage = ResponseMessage
-                                            .builder()
-                                            .metadata(meta)
-                                            .message(message)
-                                            .build();
-
-        List<Course> courses = Collections.emptyList();
-
-        switch (filterMode) {
-            case COURSE_WITHOUT_STUDENT -> {
-                courses = courseRepository.filterCourseWithoutStudent();
-
-                if(courses.isEmpty()) break;
-
-                message = String.format("Courses without students: %d", courses.size());
-            }
-
-            case COURSE_BY_STUDENT_ID -> {
-                courses = courseRepository.filterCoursesByStudent(criteria.getId());
-
-                if(courses.isEmpty()) break;
-
-                message = String.format("course count %d for student with id : %d", courses.size(), criteria.getId());
-                break;
-            }
-
-            default -> {
-                status = HttpStatus.NOT_FOUND;
-                message = "Not found";
-            }
-        };
-
-        responseMessage.setPayload(courses);
-        responseMessage.setMetadata(meta);
-        responseMessage.setMessage(message);
-
-        return ResponseEntity
-                .status(status)
-                .lastModified(System.currentTimeMillis())
-                .body(responseMessage);
+        return null;
     }
+
+
+//    @GetMapping(path = "/course/filter/")
+//    public ResponseEntity<ResponseMessage> filterCoursesWithoutStudent(@RequestBody FilterCriteria criteria) {
+//
+//        FilterMode filterMode = FilterMode.valueOf(criteria.getMode());
+//
+//        Map<String, String> meta = new HashMap<>();
+//        HttpStatus status = HttpStatus.OK;
+//        String message = "";
+//
+//        ResponseMessage responseMessage = ResponseMessage
+//                                            .builder()
+//                                            .metadata(meta)
+//                                            .message(message)
+//                                            .build();
+//
+//        List<Course> courses = Collections.emptyList();
+//
+//        switch (filterMode) {
+//            case COURSE_WITHOUT_STUDENT -> {
+//                courses = courseRepository.filterCourseWithoutStudent();
+//
+//                if(courses.isEmpty()) break;
+//
+//                message = String.format("Courses without students: %d", courses.size());
+//            }
+//
+//            case COURSE_BY_STUDENT_ID -> {
+//                courses = courseRepository.filterCoursesByStudent(criteria.getId());
+//
+//                if(courses.isEmpty()) break;
+//
+//                message = String.format("course count %d for student with id : %d", courses.size(), criteria.getId());
+//                break;
+//            }
+//
+//            default -> {
+//                status = HttpStatus.NOT_FOUND;
+//                message = "Not found";
+//            }
+//        };
+//
+//        responseMessage.setPayload(courses);
+//        responseMessage.setMetadata(meta);
+//        responseMessage.setMessage(message);
+//
+//        return ResponseEntity
+//                .status(status)
+//                .lastModified(System.currentTimeMillis())
+//                .body(responseMessage);
+//    }
 
     @GetMapping(
             path = "/student/filter/",
