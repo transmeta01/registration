@@ -3,7 +3,6 @@ package com.registration.register.controller;
 import com.registration.register.entity.Course;
 import com.registration.register.entity.Registration;
 import com.registration.register.entity.Student;
-import com.registration.register.messages.FilterCriteria;
 import com.registration.register.messages.ResponseMessage;
 import com.registration.register.repository.CourseRepository;
 import com.registration.register.repository.RegistrationRepository;
@@ -35,10 +34,10 @@ public class RegistrationController {
     RegistrationRepository registrationRepository;
 
     enum FilterMode {
-        STUDENT_WITHOUT_COURSE("student-without-course"),
-        STUDENT_PER_COURSE("student-per-course"),
-        COURSE_BY_STUDENT_ID("course-by-student-id"),
-        COURSE_WITHOUT_STUDENT("course-without-student");
+        STUDENT_WITHOUT_COURSE("without_course"),
+        STUDENT_PER_COURSE("by_course"),
+        COURSE_BY_STUDENT_ID("by_student"),
+        COURSE_WITHOUT_STUDENT("without_student");
 
         String mode;
 
@@ -112,7 +111,7 @@ public class RegistrationController {
             Course course = courseRepository.findById(courseId).get();
 
             try {
-                // has the student already registered?
+                // is the student already registered to the course?
                 if(student.getCourse().contains(course)) {
                     metadata.put("Status", HttpStatus.NOT_ACCEPTABLE.toString());
                     message = String.format("Student with id: %id, is already registered to course %courseId",
@@ -124,8 +123,9 @@ public class RegistrationController {
                     log.info(message);
                 }
 
-                // student can have 50 course and course can have 50 students at most
-                if(student.getCourse().size() < 50 && course.getCount() < 50) {
+                // a student can register to 5 courses and
+                // a course can have 50 registered students at most
+                if(student.getCourse().size() < 5 && course.getCount() < 50) {
                     int count = course.getCount() + 1;
                     course.setCount(count);
 
@@ -171,85 +171,95 @@ public class RegistrationController {
     /**
      *
      * path example:
-     *              /course/filter?mode=without-student&id=5
-     *              /course/filter/ and /course/filter?mode=without-student
+     *              /course/filter?mode=by_student&student_id=5
+     *              /course/filter/ and /course/filter?mode=without_student
+     *
+     * acceptable values :
+     *
+     * COURSE_BY_STUDENT_ID("by_student"),
+     * COURSE_WITHOUT_STUDENT("without_student");
      *
      * @param mode filter mode
      * @param id student id
      * @return ResponseEntity, augmented with metadata
      */
-    @GetMapping(path = "/course/filter")
-    public ResponseEntity<ResponseMessage> filterCourse(@RequestParam(defaultValue = "without-student") String mode,
+    @GetMapping(
+            path = "/course/filter",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<ResponseMessage> filterCourse(@RequestParam(defaultValue = "without_student") String mode,
                                                                        @RequestParam(required = false) Long id) {
         FilterMode filterMode = FilterMode.valueOf(mode);
 
-        // filter without_student
+        Map<String, String> meta = new HashMap<>();
+        HttpStatus status = HttpStatus.OK;
+        String message = "";
 
-        // filter s
-        if(id != null) {}
+        ResponseMessage responseMessage = ResponseMessage
+                                            .builder()
+                                            .metadata(meta)
+                                            .message(message)
+                                            .build();
 
-        return null;
+        List<Course> courses = Collections.emptyList();
+
+        switch (filterMode) {
+            case COURSE_WITHOUT_STUDENT -> {
+                courses = courseRepository.filterCourseWithoutStudent();
+
+                if(courses.isEmpty()) break;
+
+                message = String.format("Courses without students: %d", courses.size());
+            }
+
+            case COURSE_BY_STUDENT_ID -> {
+                courses = courseRepository.filterCoursesByStudent(id);
+
+                if(courses.isEmpty()) break;
+
+                message = String.format("course count %d for student with id : %d", courses.size(), id);
+                break;
+            }
+
+            default -> {
+                status = HttpStatus.NOT_FOUND;
+                message = "Not found";
+            }
+        };
+
+        responseMessage.setPayload(courses);
+        responseMessage.setMetadata(meta);
+        responseMessage.setMessage(message);
+
+        return ResponseEntity
+                .status(status)
+                .lastModified(System.currentTimeMillis())
+                .body(responseMessage);
     }
 
-
-//    @GetMapping(path = "/course/filter/")
-//    public ResponseEntity<ResponseMessage> filterCoursesWithoutStudent(@RequestBody FilterCriteria criteria) {
-//
-//        FilterMode filterMode = FilterMode.valueOf(criteria.getMode());
-//
-//        Map<String, String> meta = new HashMap<>();
-//        HttpStatus status = HttpStatus.OK;
-//        String message = "";
-//
-//        ResponseMessage responseMessage = ResponseMessage
-//                                            .builder()
-//                                            .metadata(meta)
-//                                            .message(message)
-//                                            .build();
-//
-//        List<Course> courses = Collections.emptyList();
-//
-//        switch (filterMode) {
-//            case COURSE_WITHOUT_STUDENT -> {
-//                courses = courseRepository.filterCourseWithoutStudent();
-//
-//                if(courses.isEmpty()) break;
-//
-//                message = String.format("Courses without students: %d", courses.size());
-//            }
-//
-//            case COURSE_BY_STUDENT_ID -> {
-//                courses = courseRepository.filterCoursesByStudent(criteria.getId());
-//
-//                if(courses.isEmpty()) break;
-//
-//                message = String.format("course count %d for student with id : %d", courses.size(), criteria.getId());
-//                break;
-//            }
-//
-//            default -> {
-//                status = HttpStatus.NOT_FOUND;
-//                message = "Not found";
-//            }
-//        };
-//
-//        responseMessage.setPayload(courses);
-//        responseMessage.setMetadata(meta);
-//        responseMessage.setMessage(message);
-//
-//        return ResponseEntity
-//                .status(status)
-//                .lastModified(System.currentTimeMillis())
-//                .body(responseMessage);
-//    }
+    /**
+     *
+     * path example:
+     *      /student/filter?mode=by_course&course_id=5
+     *      /student/filter/ and /student/filter?mode=without_course (there are equivalent)
+     *
+     * acceptable query parameter values:
+     *
+     * STUDENT_WITHOUT_COURSE("without_course"),
+     * STUDENT_PER_COURSE("by_course"),
+     *
+     * @param mode
+     * @param course_id
+     * @return
+     */
 
     @GetMapping(
             path = "/student/filter/",
-            consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public ResponseEntity<ResponseMessage> filterStudent(@RequestBody FilterCriteria criteria) {
-        FilterMode mode = FilterMode.valueOf(criteria.getMode());
+    public ResponseEntity<ResponseMessage> filterStudent(@RequestParam(defaultValue = "without_course") String mode,
+                                                            @RequestParam(required = false) Long course_id) {
+        FilterMode filterMode = FilterMode.valueOf(mode);
 
         List<Student> payload = new ArrayList<>();
         Map<String, String> meta = new HashMap<>();
@@ -262,10 +272,10 @@ public class RegistrationController {
 
         String message = "";
 
-        switch (mode) {
+        switch (filterMode) {
             case STUDENT_PER_COURSE -> {
-                payload = studentRepository.filterStudentsByCourse(criteria.getId());
-                message = String.format("student %id, has %count courses", criteria.getId(), payload.size());
+                payload = studentRepository.filterStudentsByCourse(course_id);
+                message = String.format("student %id, has %count courses", course_id, payload.size());
             }
 
             case STUDENT_WITHOUT_COURSE -> {
