@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @Slf4j
 @MappedSuperclass
-public class AbstractEntity {
+public abstract class AbstractEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
