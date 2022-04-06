@@ -61,44 +61,44 @@ class RegisterApplicationTests {
 	//@TODO instantiate a json schema and validator
 //	new ObjectMapper().readValue(jsonString, Map.class);
 
-	private final String rootURI = "http://localhost:" + port + "/v1/registration";
-
-	@Test
-	void contextLoads() {
-		assertThat(registrationController).isNotNull();
-	}
-
-	@Test
-	void injectedComponentsNotNull() {
-		assertThat(dataSource).isNotNull();
-		assertThat(jdbcTemplate).isNotNull();
-		assertThat(entityManager).isNotNull();
-		assertThat(studentRepository).isNotNull();
-	}
-
-	@Test
-	void testStudent() {
-		RestTemplateBuilder builder = new RestTemplateBuilder();
-		RestTemplate restTemplate = builder.rootUri(rootURI).build();
-		final HttpEntity<String> request = new HttpEntity<>(null, new HttpHeaders());
-		final ResponseEntity<Student> response = restTemplate.exchange(
-				"/student/1", HttpMethod.GET, request, new ParameterizedTypeReference<>() {});
-
-		assertEquals(HttpStatus.OK, response.getStatusCode());
-	}
-
-	@Test
-	void getAllStudents() {
-		RestTemplateBuilder builder = new RestTemplateBuilder();
-		RestTemplate restTemplate = builder.rootUri(rootURI).build();
-		final HttpEntity<String> request = new HttpEntity<>(null, new HttpHeaders());
-		final ResponseEntity<List<Student>> response = restTemplate.exchange(
-				"/student/", HttpMethod.GET, request, new ParameterizedTypeReference<List<Student>>() {});
-
-		final List<Student> students = response.getBody();
-
-		assertEquals(HttpStatus.OK, response.getStatusCode());
-		assertEquals(2, students.size());
-	}
+//	private final String rootURI = "http://localhost:" + port + "/v1/registration";
+//
+//	@Test
+//	void contextLoads() {
+//		assertThat(registrationController).isNotNull();
+//	}
+//
+//	@Test
+//	void injectedComponentsNotNull() {
+//		assertThat(dataSource).isNotNull();
+//		assertThat(jdbcTemplate).isNotNull();
+//		assertThat(entityManager).isNotNull();
+//		assertThat(studentRepository).isNotNull();
+//	}
+//
+//	@Test
+//	void testStudent() {
+//		RestTemplateBuilder builder = new RestTemplateBuilder();
+//		RestTemplate restTemplate = builder.rootUri(rootURI).build();
+//		final HttpEntity<String> request = new HttpEntity<>(null, new HttpHeaders());
+//		final ResponseEntity<Student> response = restTemplate.exchange(
+//				"/student/1", HttpMethod.GET, request, new ParameterizedTypeReference<>() {});
+//
+//		assertEquals(HttpStatus.OK, response.getStatusCode());
+//	}
+//
+//	@Test
+//	void getAllStudents() {
+//		RestTemplateBuilder builder = new RestTemplateBuilder();
+//		RestTemplate restTemplate = builder.rootUri(rootURI).build();
+//		final HttpEntity<String> request = new HttpEntity<>(null, new HttpHeaders());
+//		final ResponseEntity<List<Student>> response = restTemplate.exchange(
+//				"/student/", HttpMethod.GET, request, new ParameterizedTypeReference<List<Student>>() {});
+//
+//		final List<Student> students = response.getBody();
+//
+//		assertEquals(HttpStatus.OK, response.getStatusCode());
+//		assertEquals(2, students.size());
+//	}
 
 }

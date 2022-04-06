@@ -16,8 +16,8 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 
 import org.springframework.web.client.RestTemplate;
-import org.testcontainers.containers.MySQLContainer;
-import org.testcontainers.junit.jupiter.Testcontainers;
+//import org.testcontainers.containers.MySQLContainer;
+//import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @Slf4j
 @ActiveProfiles("test")
 @DataJpaTest
-@Testcontainers
+//@Testcontainers
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class StudentRepositoryTest {
 
@@ -38,51 +38,51 @@ public class StudentRepositoryTest {
     @Autowired
     RestTemplate restTemplate;
 
-    @Container
-    private static final MySQLContainer mySQLContainer = new MySQLContainer("mysql:latest")
-                                                    .withDatabaseName("test")
-                                                    .withUsername("usr")
-                                                    .withPassword("pass")
-                                                    .withInitScript("create-database.sql")
-                                                    .start();
-
-    @BeforeAll
-    void init() {
-        // save a few students
-        log.info("Saving a few users ");
-        Student sam = Student
-                .builder()
-                .age(37)
-                .firstName("A User")
-                .lastName("A Sam")
-                .build();
-
-        Student smith = Student
-                .builder()
-                .age(40)
-                .firstName("Another Student")
-                .lastName("Another Smith")
-                .build();
-
-        studentRepository.saveAllAndFlush(
-                Arrays.asList(sam, smith)
-        );
-    }
-
-    @Test
-    void test() {
-        assertTrue(mySQLContainer.isRunning());
-    }
-
-    @Test
-    void getAllStudents() {
-        List<Student> students = studentRepository.findAll();
-        assertEquals(2, students.size());
-    }
-
-    @Test
-    void testStudentById() {
-        Student student = studentRepository.getById(1L);
-        assertNotNull(student);
-    }
+//    @Container
+//    private static final MySQLContainer mySQLContainer = new MySQLContainer("mysql:latest")
+//                                                    .withDatabaseName("test")
+//                                                    .withUsername("usr")
+//                                                    .withPassword("pass")
+//                                                    .withInitScript("create-database.sql")
+//                                                    .start();
+//
+//    @BeforeAll
+//    void init() {
+//        // save a few students
+//        log.info("Saving a few users ");
+//        Student sam = Student
+//                .builder()
+//                .age(37)
+//                .firstName("A User")
+//                .lastName("A Sam")
+//                .build();
+//
+//        Student smith = Student
+//                .builder()
+//                .age(40)
+//                .firstName("Another Student")
+//                .lastName("Another Smith")
+//                .build();
+//
+//        studentRepository.saveAllAndFlush(
+//                Arrays.asList(sam, smith)
+//        );
+//    }
+//
+//    @Test
+//    void test() {
+//        assertTrue(mySQLContainer.isRunning());
+//    }
+//
+//    @Test
+//    void getAllStudents() {
+//        List<Student> students = studentRepository.findAll();
+//        assertEquals(2, students.size());
+//    }
+//
+//    @Test
+//    void testStudentById() {
+//        Student student = studentRepository.getById(1L);
+//        assertNotNull(student);
+//    }
 }
